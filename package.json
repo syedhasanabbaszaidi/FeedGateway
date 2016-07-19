@@ -1,0 +1,35 @@
+{
+  "name": "feed",
+  "version": "0.1.0",
+  "description": "The feed enables to implement change worker pattern",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "browserify": "browserify -g uglifyify index.js --standalone FeedGateway > dist/FeedGateway.min.js -d",
+    "docs": "jsdoc2md 'index.js' > docs/index.md",
+    "test": "make test && mocha-phantomjs test/client/runner.html",
+    "build": "npm run browserify && npm run docs && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedhasanabbaszaidi/feed.git"
+  },
+  "keywords": [
+    "kwantu",
+    "feed"
+  ],
+  "author": "Hasan Abbas <syedhasanabbaszaidi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syedhasanabbaszaidi/feed/issues"
+  },
+  "homepage": "https://github.com/syedhasanabbaszaidi/feed#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.5.3",
+    "uglifyify": "^3.0.2"
+  }
+}

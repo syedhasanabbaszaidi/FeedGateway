@@ -1,0 +1,11 @@
+os:
+  - linux
+language: node_js
+node_js:
+  - "6"
+before_script:
+  - npm install -g bower browserify uglifyify mocha-phantomjs
+  - bower install
+  - npm run browserify
+script:
+  - npm test

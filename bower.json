@@ -1,0 +1,30 @@
+{
+  "name": "feed",
+  "description": "Feed emitter",
+  "main": "index.js",
+  "authors": [
+    "Hasan Abbas <syedhasanabbaszaidi@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kwantu",
+    "feed"
+  ],
+  "homepage": "https://github.com/kwantu/feed",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "moment": "^2.13.0",
+    "es6-promise": "^3.2.2"
+  }
+}
